@@ -1,5 +1,6 @@
 import TaskCard from '@/components/module/TaskCard';
 import { useAppSelector } from '@/redux/hook';
+import AddTaskModal from '@/redux/task/AddTaskModal';
 import { selectFilter, selectTasks } from '@/redux/task/taskSlice';
 
 const Tasks = () => {
@@ -10,6 +11,7 @@ const Tasks = () => {
     return (
         <div>
             <h1 className='m-5 text-center font-bold underline'>The tasks lists</h1>
+            <div className='text-center'><AddTaskModal></AddTaskModal></div>
             <div className='m-5 flex flex-col justify-center  items-center'>
                 {
                 tasks.map((task) => <TaskCard task={task} ></TaskCard>)
