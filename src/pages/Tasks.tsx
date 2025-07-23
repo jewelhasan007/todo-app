@@ -14,7 +14,7 @@ const Tasks = () => {
             <div className='text-center'><AddTaskModal></AddTaskModal></div>
             <div className='m-5 flex flex-col justify-center  items-center'>
                 {
-                tasks.map((task) => <TaskCard task={task} ></TaskCard>)
+                tasks.map((task) => <TaskCard task={task} key={task.id} ></TaskCard>)
             }
             </div>
           
