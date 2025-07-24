@@ -19,9 +19,9 @@ const TaskCard = ({task}:IProps) => {
   <CardHeader>
     <CardTitle className="flex items-center">
       <div className={cn("size-3 rounded-full mr-2", {
-        "bg-green-500": task.priority === "Low",
-        "bg-red-500": task.priority === "Medium",
-        "bg-yellow-500": task.priority === "High",
+        "bg-green-500": task.priority === "low",
+        "bg-red-500": task.priority === "medium",
+        "bg-yellow-500": task.priority === "high",
       })}></div>
       <div>{task.title}</div>
       </CardTitle>
