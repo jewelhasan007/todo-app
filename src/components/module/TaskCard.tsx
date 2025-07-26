@@ -12,7 +12,7 @@ import type { ITask } from "@/types";
 import { useDispatch } from "react-redux";
 import { Checkbox } from "../ui/checkbox";
 import { deleteTask, toggleCompleteStae } from "@/redux/task/taskSlice";
-import { Button } from "../ui/button";
+
 interface IProps{
     task: ITask
 }

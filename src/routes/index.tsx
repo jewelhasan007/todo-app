@@ -1,7 +1,8 @@
 import App from "@/App";
 import Tasks from "@/pages/Tasks";
 import ToDo from "@/pages/ToDo";
-import { User } from "lucide-react";
+import Users from "@/pages/Users";
+
 import { createBrowserRouter } from "react-router";
 
 const router = createBrowserRouter([
@@ -11,14 +12,9 @@ const router = createBrowserRouter([
         Component: App,
         children: [
             {
-                index: true,
-        // path: "users",
-        //element: <User></User>
-            },
-            {
             
         path: "users",
-       element: <User></User>
+       element: <Users></Users>
             },
          {
         path: "tasks",

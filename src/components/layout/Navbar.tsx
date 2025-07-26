@@ -12,7 +12,7 @@ const Navbar = () => {
             </div>
 <div><Link to="/" className="mr-4"> Home</Link>
 <Link to="/tasks" className="mr-4"> Task</Link>
-<Link to="/todo" className="mr-4"> ToDO</Link>
+<Link to="/users" className="mr-4"> Users</Link>
 </div>
 <div>
                 <ModeToggle></ModeToggle>
