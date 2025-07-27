@@ -24,8 +24,7 @@ import { cn } from "@/lib/utils";
 import { useDispatch } from "react-redux";
 import { addTask } from "./taskSlice";
 import type { ITask } from "@/types";
-
-
+ 
 const AddTaskModal = () => {
   const form = useForm();
 

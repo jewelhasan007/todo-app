@@ -2,7 +2,6 @@ import type { ITask, IUser } from "@/types";
 import { createSlice, nanoid, type PayloadAction } from "@reduxjs/toolkit";
 import type { RootState } from "../store";
 
-
 interface InitialState{
     users : IUser[],
   
@@ -31,7 +30,7 @@ const userSlice = createSlice({
 })
 
 export const selectUsers = (state : RootState) => {
-    return state.todo.filter;
+    return state.allUser.users;
 }
 export const {addUser, removeUser} = userSlice.actions;
 
